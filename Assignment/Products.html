@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Products | TipToes Soles</title>
+    <style>
+        /* Sidebar, header, and other styles here (from your first HTML structure) */
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/TipToeSoles_Logo_colour.png" alt="TipToes Soles Logo" class="logo-img">
+                    <h3 class="logo-name">TipToes Soles</h3>
+                </a>
+            </div>
+
+            <div class="banner-icons">
+                <input type="text" class="search-box" placeholder="Search...">
+                <a href="wishlist.html" class="icon"><i class="fa fa-heart"></i> Wishlist</a>
+                <a href="cart.html" class="icon"><i class="fa fa-shopping-cart"></i> Cart</a>
+                <a href="login.html" class="icon"><i class="fa fa-sign-in"></i> Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">×</a>
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Button to Open Sidebar -->
+    <button class="openbtn" onclick="toggleSidebar()">☰ Open Sidebar</button>  
+
+    <!-- Main Content Section - Product Grid -->
+    <div class="main-content">
+        <div class="product-grid">
+  <!-- Product 1 (Male) -->
+<div class="product-card">
+    <img src="Images/GaryTan.jpg" alt="Gary Tan Shoes">
+    <div class="product-info">
+        <h3>Comfortable and Stylish Shoes</h3>
+        <p>A brief description of Product 1. Comfortable and stylish shoes for everyday use.</p>
+        <span class="price">$49.99</span>
+    </div>
+</div>
+
+<!-- Product 2 (Male) -->
+<div class="product-card">
+    <img src="Images/HeavenlyBlack.jpg" alt="Heavenly Black Shoes">
+    <div class="product-info">
+        <h3>Elegant Shoes for Formal Occasions</h3>
+        <p>A brief description of Product 2. Elegant and perfect for formal occasions.</p>
+        <span class="price">$79.99</span>
+    </div>
+</div>
+
+<!-- Product 3 (Male) -->
+<div class="product-card">
+    <img src="Images/WorkandWalkChesnut.jpg" alt="Work and Walk Chesnut Shoes">
+    <div class="product-info">
+        <h3>Premium Quality Comfort</h3>
+        <p>A brief description of Product 3. Premium quality, designed for comfort.</p>
+        <span class="price">$99.99</span>
+    </div>
+</div>
+
+<!-- Product 4 (Female) -->
+<div class="product-card">
+    <img src="Images/SallyBlack.jpg" alt="Sally Black Shoes">
+    <div class="product-info">
+        <h3>Elegant Black Shoes for Women</h3>
+        <p>A brief description of Product 4. Elegant black shoes, perfect for any occasion.</p>
+        <span class="price">$59.99</span>
+    </div>
+</div>
+
+<!-- Product 5 (Female) -->
+<div class="product-card">
+    <img src="Images/SallyTan.jpg" alt="Sally Tan Shoes">
+    <div class="product-info">
+        <h3>Stylish Tan Shoes for Women</h3>
+        <p>A brief description of Product 5. Stylish tan shoes for casual and formal occasions.</p>
+        <span class="price">$69.99</span>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <p>&copy; <a href="#">TipToes Soles</a> | All rights reserved</p>
+            <nav class="footer-nav">
+                <a href="delivery-policy.html">Delivery Policy</a> |
+                <a href="returns-policy.html">Return & Exchange</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+        }
+    </script>
+</body>
+</html>
